@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #152A35;
+  --ink-soft: #3C5462;
+  --paper: #F3F6F4;
+  --paper-raised: #FFFFFF;
+  --line: #DCE3DF;
+  --dawn: #E3A23C;
+  --dawn-soft: #F6E3C2;
+  --dusk: #7C8FC9;
+  --dusk-soft: #DEE3F5;
+  --sage: #4E7F63;
+  --sage-soft: #DCEAE1;
+  --warn: #C05A3E;
+  --warn-soft: #F3DED6;
+  --neutral: #8A9B99;
+  --neutral-soft: #E8ECE9;
+  --clock-off: #E4E7E3;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-line: var(--line);
+  --color-dawn: var(--dawn);
+  --color-dawn-soft: var(--dawn-soft);
+  --color-dusk: var(--dusk);
+  --color-dusk-soft: var(--dusk-soft);
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-neutral: var(--neutral);
+  --color-neutral-soft: var(--neutral-soft);
+  --font-display: 'Fraunces', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
